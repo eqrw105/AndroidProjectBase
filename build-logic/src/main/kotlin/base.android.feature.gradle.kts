@@ -1,4 +1,3 @@
-import com.smin.base.configureComposeAndroid
 import com.smin.base.configureHiltAndroid
 import com.smin.base.configureKotlinAndroid
 import com.smin.base.libs
@@ -33,16 +32,11 @@ android {
 
 configureKotlinAndroid()
 configureHiltAndroid()
-configureComposeAndroid()
 
 dependencies {
     val libs = project.extensions.libs
     implementation(project(":core:designsystem"))
 
     implementation(libs.findLibrary("androidx.core.ktx").get())
-    implementation(libs.findLibrary("androidx.lifecycle.runtime.ktx").get())
-
-    testImplementation(libs.findLibrary("junit").get())
-    androidTestImplementation(libs.findLibrary("androidx.junit").get())
-    androidTestImplementation(libs.findLibrary("androidx.espresso.core").get())
+    implementation(libs.findLibrary("kotlinx.serialization.json").get())
 }

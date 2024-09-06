@@ -11,6 +11,6 @@
 
 - IDE : Android Studio Jellyfish ([Download](https://developer.android.com/studio))
 - JDK : Java 17
-- Kotlin : 1.9.24
+- Kotlin : 2.0.10
 - Gradle : 8.6
 - AGP : 8.4.2
